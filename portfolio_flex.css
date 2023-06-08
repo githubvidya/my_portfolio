@@ -1,0 +1,431 @@
+@media (max-width: 1000px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #222121;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column; 
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #ffffff;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 0px;
+        right: 60px;
+    }
+    .logo img{
+        border-radius: 50%;
+        position: absolute;
+        right: 0%;
+        width: 65px;
+        height: 60px;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+    
+    .main-container{
+        height: 600px;
+    }
+    
+
+    .home-content{
+        max-width: 25rem;
+        height: 437px;
+        /* border: 2px solid red; */
+    
+    }
+    .home-content h1{
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    .home-content p{
+        font-size: 1rem;
+    }
+
+    .side_pic img{
+    width: 30%;
+    height: 50%;
+    top: 26%;
+    right: 5%;
+    }
+    .heading_h1 :nth-child(2){
+        font-size: 1.2rem;
+        color: #a7a7a7;    
+    }
+.ssk2{
+    font-size: 6rem;
+}
+.h_img img{
+    width: 58%;
+    display: none;
+}
+.ssk3{
+    font-size: 3rem;
+    opacity: 1;
+}
+.clg{
+    width: 70vw;
+    height: 40vh;
+}
+.free h1{
+    font-size: 4rem;
+}
+#skl{
+    margin: 1%;
+}
+    .de_s{
+        width: 30%;
+        height: 42vh;
+      margin: auto;
+        }
+        #skl img{
+            width: 70px;
+            height: 70px;
+        }
+        #skl h6{
+            font-size: 2rem;
+        }
+        #skl p{
+            position: relative;
+            bottom: 0%;
+            font-size: 1rem;
+        }
+}
+@media (max-width: 700px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+        height: 700px;
+        background-color: black;
+        color: #222121;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .main-container .img{
+        display: block;
+        display: flex;
+        justify-content: center;
+     
+    }
+    .main-container .img img{
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        position: absolute;
+        top: 15%;
+        border: 0.6px solid whitesmoke;
+    }
+    .home-content{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        max-width: 25rem;
+        height: 190px;
+        position: relative;
+        bottom: 100px;
+    }
+    .home-content h1{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .home-content p{
+        font-size:1.1rem;
+    }
+.side_pic{
+display: none;
+}
+.home{
+  position: absolute;
+  bottom: 0%;
+   
+}
+    #HOME{
+        display: flex;
+      align-items: center;
+    }
+    .main_page{
+        display: flex;
+        border: 1px solid rgb(18, 17, 17);
+        height: 100%;
+        flex-direction: column;
+        background-color: #141414;
+        width: 90%;
+        border-radius: 7%;
+       padding-top: 5%;
+       padding-bottom: 5%;
+       margin: auto;
+
+    }
+    .clg{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      width: 70vw;
+      height: 20vh;
+    }
+    .heading_h1{
+        width: 98%;
+        display: flex;
+        margin: auto;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    }
+    .heading_h1 :nth-child(1){
+
+        align-items: center;
+        right: 1%;
+        font-size: 1.7rem;
+        color: #802020;
+    }
+    .h_1{
+        align-items: center;
+        right: 0%;
+        font-size: 0rem;
+        color: #802020;
+
+    }
+    .heading_h1 :nth-child(2){
+        display: flex;
+        justify-content: center;
+        left: 0%;
+        font-size:0.9rem;
+        color: #918e8e;
+    }
+    .ssk2{
+        font-size: 2.7rem;
+        border-bottom: 5px solid red;
+        margin-bottom: 4%;
+    }
+    .ssk3{
+        border-bottom: 5px solid red;
+        font-size: 2.7rem;
+    }
+    .ssk{
+        font-size: 2.7rem;
+     border-bottom: 5px solid red;
+    }
+    .hiring{
+        border-radius: 5%;
+        margin-top: 5%;
+        width: 90%;
+        height: 30%;
+    }
+    .form :nth-child(13){
+        width: 90%;
+color: #802020;
+    }
+    .h_img img{
+        width: 58%;
+        display: none;
+    }
+    .free{
+        margin: auto;
+        width: 92%;
+        margin-top: 10%;
+        border: 1px solid green;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .free h1{
+        position: relative;
+        font-size: 1.8rem;
+        color: antiquewhite;
+    }
+.slide{
+    height: 76vh;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+    .main_sld h1{
+    font-size: 2rem;
+}
+.main_sld{
+    border-radius: 10%;
+    justify-content: center;
+    width: 95%;
+    height: 60vh;
+}
+.top{
+height: 30vh;
+
+}
+.top :nth-child(1){
+    font-size: 3.1rem;
+}
+.bottom{
+    height: 30vh;
+}
+.bottom :nth-child(1){
+    font-size: 3.1rem;
+}
+.center{
+    background: #000;
+    height: 60vh;
+}
+.center h2{
+    font-size: 2rem;
+}
+.center_div :nth-child(1){
+position: relative;
+bottom: 30%;
+    font-size: 1.9rem; 
+}
+.fotr{
+    bottom: 0vh;
+}
+.center_img{
+
+text-align: center;
+justify-content: center;
+margin: auto;
+align-items: center;
+
+}
+.center_img .c_img{
+ 
+    width: 150px;
+    height: 150px;
+}
+
+
+/* }}}}}}}}}}}}}}}}}}}}}}}}}]slills||||||||||||||||||||||| */
+
+#skills{
+    display: grid;
+    display: flex;
+    justify-content: center;
+}
+
+.de_s{
+width: 80%;
+height: 30vh;
+}
+
+#skl h6{
+    position: relative;
+    font-size: 2rem;
+    color: rgb(222, 71, 44);
+}
+#skl p{
+    width: 96%;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+#skl img{
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  
+}
+    .sp a{
+        text-decoration: none;
+    }
+    .fnt{
+       
+        font-size: 15px;
+    }
+
+}
